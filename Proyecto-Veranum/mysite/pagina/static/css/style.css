@@ -1,0 +1,178 @@
+
+
+.d-item {
+    height: 500px;
+}
+
+.d-img {
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.6);
+}
+
+body {
+    background: #0F2027;
+    background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);
+    background: linear-gradient(to right, #2C5364, #203A43, #0F2027);
+}
+
+/* Barra de botones*/
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 85px;
+    padding: 5px 10%;
+    font-family: 'Oswald';
+    position: sticky;
+    top: 0px;
+    z-index: 3;
+}
+
+.logo{
+    height: 50px;
+}
+.menu-icono{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#menu-icono{
+    display: none;
+}
+
+.menu-icono{
+    display: none;
+}
+
+label{
+    cursor: pointer;
+    display: none;
+}
+
+/*Logo de barra de botones*/
+.header .logo img {
+    height: 40px;
+    width: auto;
+}
+
+
+
+.header .nav-links li {
+    display: inline-block;
+    cursor: pointer;
+    padding: 0 15px;
+    font-size: 15px;
+}
+
+.header .nav-links li:hover {
+    transform: scale(1.0);
+}
+
+.header .nav-links a {
+    color: white;
+    text-decoration: none;
+}
+
+.header .nav-links li a:hover {
+    color: #238ab6;
+}
+
+footer {
+    background-color: #0F2027;
+    /* color de fondo del footer */
+    color: #fff;
+    /* color de texto del footer */
+    padding: 20px;
+    /* espacio interno del footer */
+}
+
+.footer-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-container a {
+    margin: 0 10px;
+    font-size: 24px;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.footer-container a:hover {
+    color: #ddd;
+}
+
+.contenedor-item p {
+    color: black
+}
+
+.contenedor-item {
+    display: flex;
+    background-color: #f1ece7b2;
+    font-size: medium;
+}
+
+.contenedor-item img {
+    height: 250px;
+    width: auto;
+    justify-content: end;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+}
+
+.noticias-e-sports {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.titulos-noticias {
+    color: antiquewhite;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulos-noticias {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+@media (max-width: 480px) {
+    .contenedor-item img {
+        display: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo {
+        display: none;
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .nav-links {
+        align-items: left;
+        display: wrap;
+    }
+}
+
+@media (max-width: 480px) {
+    .contenedor-item img {
+        display: none;
+
+    }
+}
+
+.contac {
+    display: contents;
+    justify-content: left;
+    align-items: start;
+    cursor: default;
+}
