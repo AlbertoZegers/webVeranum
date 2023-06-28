@@ -1,0 +1,122 @@
+body {
+  font-family: Arial, sans-serif;
+  background-image: linear-gradient(#2C5364, #0F2027);
+}
+
+h1 {
+  text-align: center;
+  color: #2C5364;
+}
+
+form {
+  max-width: 500px;
+  margin: 0 auto;
+  background-color: #f4f4f4;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input {
+
+  padding: 5px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  width: 95%;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 162px;
+  background-color: #4CAF50;
+  border: none;
+  color: #fff;
+  border-radius: 3px;
+  cursor: pointer;
+  width: 100;
+
+}
+
+.btn:hover {
+  background-color: #3e8e41;
+}
+
+input:focus {
+  border: 1px solid #4CAF50;
+}
+
+footer {
+  margin: 0px;
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  box-shadow: 0 -2px 4px rgba(0, 0, 0, .1);
+}
+
+.wrapper {
+  max-width: 960px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+p {
+  margin: 0;
+}
+
+form {
+  width: 400px;
+  margin: 50px auto;
+}
+
+/* Estilos para pantallas medianas */
+@media screen and (max-width: 768px) {
+  form {
+    width: 80%;
+  }
+}
+
+/* Estilos para pantallas pequeñas */
+@media screen and (max-width: 480px) {
+  form {
+    width: 100%;
+  }
+
+  .btn {
+    width: 100px;
+    height: 30px;
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 335) {
+  .btn {
+    width: 50px;
+    height: 20px;
+    font-size: 14px;
+  }
+}
+/* Mensaje ERROR */
+.error {
+  background-color: rgba(255, 0, 0, 0.767);
+  border-style: initial;
+  border: black;
+  color: black;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+/* Boton volver */
+.volv {
+  margin-top: 10px;
+}
