@@ -44,7 +44,6 @@ def agregarJuego(request):
     nombre = request.POST['txtNombre']
     descripcion = request.POST['txtDesc']
     juego = Juego.objects.create(codigo=codigo,nombre=nombre, descripcion=descripcion)
-    messages.success(request, '¡Juego Agregado Correctamente!')
     return redirect('Gestion_juegos')
 
 def edicionJuego(request, codigo):

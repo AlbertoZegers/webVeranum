@@ -27,7 +27,6 @@
     <nav>
       <ul class="nav-links">
         <li><a href="{% url 'inicio'%}">INICIO</a></li>
-        <li><a href="{% url 'inicio'%}">VISION</a></li>
         <li><a href="{% url 'juegos'%}">HABITACIONES DISPONIBLES</a></li>
         {% if request.user.is_authenticated %}
                 <li><a href={% url 'exit' %}>CERRAR SESION COMO: {{user.username|upper}}</a></li>
@@ -94,10 +93,10 @@
       <footer>
         <div class="footer-container">
           <p class="contac">CONTACTOS</p>
-          <a href="https://www.instagram.com/jereemy.03/" target="_blank">
+          <a href="#">
             <i class="fab fa-instagram"></i>
           </a>
-          <a href="https://www.instagram.com/kuduin/" target="_blank">
+          <a href="#">
             <i class="fab fa-instagram"></i>
           </a>
         </div>

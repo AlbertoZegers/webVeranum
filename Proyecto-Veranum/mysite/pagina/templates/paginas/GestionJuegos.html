@@ -24,7 +24,7 @@
     <h2>AGREGAR RESERVAS</h2>
     <div class="cards"> 
         <div class="card-body">
-            <form action="/agregarJuego/" method="POST">{% csrf_token %}    
+            <form action="/agregar/" method="POST">{% csrf_token %}    
                 <div class="form-group">
                     <input type="text" name="txtCodigo" id="txtCodigo" class="form-control"  placeholder="N° de la habitacion..."   
                         minlength="1" maxlength="6" required>
@@ -62,8 +62,8 @@
                     <td>{{j.codigo}} </td>
                     <td>{{j.nombre}} </td>
                     <td>{{j.descripcion}} </td>
-                    <td><a href="edicionJuego/{{j.codigo}}" class="btn btn-info">Editar</a></td>
-                    <td><a href="eliminarJuego/{{j.codigo}}" class="btn btn-danger btnEliminar">Eliminar</a></td>
+                    <td><a href="edicion/{{j.codigo}}" class="btn btn-info">Editar</a></td>
+                    <td><a href="eliminar/{{j.codigo}}" class="btn btn-danger btnEliminar">Eliminar</a></td>
                 </tr>
                 {% endfor %}
             </tbody>

@@ -25,7 +25,7 @@
             <h2 style="text-align: center; margin-right: 10px;">EDITAR RESERVA</h2>
             <div class="cards"> 
                 <div class="card-body">
-                    <form action="/editarJuego/" method="POST">{% csrf_token %}    
+                    <form action="/editar/" method="POST">{% csrf_token %}    
                         <div class="form-group">
                             <input type="text" name="txtCodigo" id="txtCodigo" value="{{juegos.codigo}}" class="form-control"  
                             minlength="1" maxlength="6" readonly required>
